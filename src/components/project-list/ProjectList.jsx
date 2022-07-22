@@ -7,6 +7,13 @@ function ProjectList(props) {
     )
 }
 
-ProjectList.propTypes = {}
+ProjectList.propTypes = {
+    data: PropTypes.arrayOf(PropTypes.shape(
+        {
+            img: PropTypes.string,
+            category: PropTypes.string
+        }
+    ))
+}
 
 export default ProjectList
